@@ -1,0 +1,25 @@
+{
+  "name": "protocol-uploader",
+  "version": "1.0.0",
+  "description": "CLI tool to upload protocols to Opentrons Flex / OT-2 robots",
+  "main": "dist/cli.js",
+  "bin": {
+    "pup": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "4.21.0",
+    "typescript": "6.0.3"
+  }
+}
