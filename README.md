@@ -14,13 +14,10 @@ protocol uplader is a CLI tool to upload a protocol to Opentrons Flex/OT-2
 ## how to build & install protocol uploader
 ```shell
 # bun
-bun run build && bun add -g .
+bun run build && bun link protocol-uploader
 
 # npm
 npm run build && npm install -g .
-
-# pnpm
-pnpm run build && pnpm install -g .
 
 ```
 
@@ -32,4 +29,8 @@ pup path/to/protocol --ip "robot_ip-address"
 ex
 ```shell
 pup 96_channel_test.py --ip 192.168.1.23
+
+Uploading protocol...
+Protocol uploaded. ID: e9df54d1-0446-4b12-9160-fe20732906b9
+Waiting for analysis...done
 ```
